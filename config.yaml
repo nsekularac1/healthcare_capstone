@@ -1,0 +1,18 @@
+project:
+  name: integrated_intelligent_health_monitoring
+  random_seed: 42
+
+data:
+  diabetes_raw_dir: data/raw/diabetes
+  diabetes_processed_dir: data/processed/diabetes
+  pamap2_raw_dir: data/raw/pamap2
+  pamap2_processed_dir: data/processed/pamap2
+
+models:
+  readmission_model_path: models/readmission_model.pkl
+  activity_model_path: models/activity_model.pt
+
+safety:
+  allow_diagnosis: false
+  allow_prescribing: false
+  allow_emergency_response: false

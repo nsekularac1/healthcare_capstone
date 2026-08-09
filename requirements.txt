@@ -1,0 +1,2 @@
+# Generate the final file from the completed working environment with:
+# pip freeze > requirements.txt

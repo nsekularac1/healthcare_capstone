@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+
+# Generated model artifacts may be large
+*.pt
+*.pkl
+
+# Keep raw/processed data out of Git by default
+data/raw/*
+data/processed/*
+!data/raw/**/.gitkeep
+!data/processed/**/.gitkeep

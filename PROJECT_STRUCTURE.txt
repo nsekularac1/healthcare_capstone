@@ -1,0 +1,44 @@
+healthcare_capstone/
+├── data/
+│   ├── raw/
+│   │   ├── diabetes/
+│   │   └── pamap2/
+│   └── processed/
+│       ├── diabetes/
+│       └── pamap2/
+├── notebooks/
+│   ├── 01_diabetes_eda.ipynb
+│   ├── 02_pamap2_eda.ipynb
+│   ├── 03_readmission_model.ipynb
+│   ├── 04_activity_model.ipynb
+│   └── 05_system_evaluation.ipynb
+├── src/
+│   ├── preprocessing/
+│   │   ├── __init__.py
+│   │   ├── diabetes.py
+│   │   └── pamap2.py
+│   ├── prediction/
+│   │   ├── __init__.py
+│   │   └── readmission.py
+│   ├── activity/
+│   │   ├── __init__.py
+│   │   └── lstm.py
+│   ├── generation/
+│   │   ├── __init__.py
+│   │   └── explanation.py
+│   └── agent/
+│       ├── __init__.py
+│       ├── agent.py
+│       ├── tools.py
+│       └── safeguards.py
+├── models/
+├── tests/
+│   ├── test_preprocessing.py
+│   ├── test_agent.py
+│   └── test_safeguards.py
+├── diagrams/
+├── reports/
+├── config.yaml
+├── README.md
+├── requirements.txt
+└── .gitignore
