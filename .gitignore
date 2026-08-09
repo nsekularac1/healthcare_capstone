@@ -10,7 +10,7 @@ venv/
 *.pt
 *.pkl
 
-# Keep raw/processed data out of Git by default
+# Keeping raw/processed data out of Git by default
 data/raw/*
 data/processed/*
 !data/raw/**/.gitkeep
