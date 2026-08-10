@@ -80,6 +80,8 @@ healthcare_capstone/
 │   │   ├── diabetes/
 │   │   └── pamap2/
 │   └── processed/
+│       ├── diabetes/
+│       └── pamap2/
 ├── notebooks/
 │   ├── 01_diabetes_eda.ipynb
 │   ├── 02_pamap2_eda.ipynb
@@ -88,28 +90,38 @@ healthcare_capstone/
 │   └── 05_system_evaluation.ipynb
 ├── src/
 │   ├── preprocessing/
+│   │   ├── __init__.py
 │   │   ├── diabetes.py
 │   │   └── pamap2.py
 │   ├── prediction/
+│   │   ├── __init__.py
 │   │   └── readmission.py
 │   ├── activity/
+│   │   ├── __init__.py
 │   │   └── lstm.py
 │   ├── generation/
+│   │   ├── __init__.py
 │   │   └── explanation.py
 │   └── agent/
+│       ├── __init__.py
+│       ├── health_agent.py
 │       ├── tools.py
-│       ├── safeguards.py
-│       └── health_agent.py
+│       └── safeguards.py
 ├── models/
-│   ├── readmission_model.pkl
-│   └── activity_model.pt
 ├── tests/
+│   ├── test_preprocessing_diabetes.py
+│   ├── test_preprocessing_pamap2.py
+│   └── test_readmission.py
+│   └── test_lstm.py
+│   └── test_openai_connection.py
 │   └── test_integrated_agent.py
+│   └── test_safeguards.py 
 ├── diagrams/
 ├── reports/
 ├── config.yaml
+├── README.md
 ├── requirements.txt
-└── README.md
+└── .gitignore
 ```
 
 ## Technical Components

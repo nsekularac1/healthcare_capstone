@@ -28,14 +28,18 @@ healthcare_capstone/
 │   │   └── explanation.py
 │   └── agent/
 │       ├── __init__.py
-│       ├── agent.py
+│       ├── health_agent.py
 │       ├── tools.py
 │       └── safeguards.py
 ├── models/
 ├── tests/
-│   ├── test_preprocessing.py
-│   ├── test_agent.py
-│   └── test_safeguards.py
+│   ├── test_preprocessing_diabetes.py
+│   ├── test_preprocessing_pamap2.py
+│   └── test_readmission.py
+│   └── test_lstm.py
+│   └── test_openai_connection.py
+│   └── test_integrated_agent.py
+│   └── test_safeguards.py 
 ├── diagrams/
 ├── reports/
 ├── config.yaml
