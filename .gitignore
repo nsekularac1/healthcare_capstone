@@ -7,8 +7,8 @@ venv/
 .DS_Store
 
 # Generated model artifacts may be large
-*.pt
-*.pkl
+# *.pt
+# *.pkl
 
 # Keeping raw/processed data out of Git by default
 data/raw/*

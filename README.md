@@ -274,6 +274,15 @@ pip freeze > requirements.txt
 
 The project uses fixed random seeds where applicable, saved model artifacts, explicit preprocessing modules, and participant/patient-aware data splitting to improve reproducibility.
 
+## Limitations
+
+- The Diabetes 130-US Hospitals and PAMAP2 datasets represent different populations, so the integrated system does not perform a patient-level multimodal join and cannot support causal conclusions between wearable activity and readmission risk.
+- PAMAP2 contains only nine participants, which limits generalizability to broader populations.
+- The wearable pipeline uses subject-aware train/test splitting to reduce leakage; however, because of the small number of participants, the same held-out subject set is used for intermediate validation during training and final evaluation. The reported LSTM results should therefore be interpreted as a subject-separated performance estimate rather than a completely untouched final benchmark.
+- A stronger future evaluation would use separate training, validation, and final test participant groups or participant-level cross-validation.
+- OpenAI-generated explanations may vary between executions even when the underlying local model outputs remain the same.
+- The prototype is not validated for clinical deployment and does not include production EHR integration, real-time monitoring, authentication, regulatory controls, or prospective clinical validation.
+
 ## Responsible Use
 
 This repository is a capstone prototype and is not validated for clinical deployment. Any real healthcare use would require substantially stronger clinical validation, fairness assessment, security/privacy review, monitoring, governance, regulatory review, and qualified human oversight.
